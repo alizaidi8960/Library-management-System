@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pay Fine</title>
+</head>
+<body>
+    <h1>Pay Fine</h1>
+    <form action="/pay_fine" method="POST">
+        <label>Book Name:</label>
+        <input type="text" name="book_name" value="{{ book_name }}" readonly>
+        <br>
+        <label>Fine Amount:</label>
+        <input type="text" name="fine_amount" value="{{ fine_amount }}" readonly>
+        <br>
+        <label>Fine Paid:</label>
+        <input type="checkbox" name="fine_paid">
+        <br>
+        <label>Remarks:</label>
+        <textarea name="remarks"></textarea>
+        <br>
+        <button type="submit">Confirm Payment</button>
+    </form>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
