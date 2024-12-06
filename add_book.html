@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Book</title>
+</head>
+<body>
+    <h1>Add a New Book</h1>
+    <form action="/add_book" method="POST">
+        <label>Book Name:</label>
+        <input type="text" name="name" required>
+        <br>
+        <label>Author Name:</label>
+        <input type="text" name="author" required>
+        <br>
+        <label>Category:</label>
+        <input type="radio" name="category" value="book" checked> Book
+        <input type="radio" name="category" value="movie"> Movie
+        <br>
+        <button type="submit">Add Book</button>
+    </form>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
