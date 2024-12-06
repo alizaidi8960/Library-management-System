@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Issue Book</title>
+</head>
+<body>
+    <h1>Issue a Book</h1>
+    <form action="/issue_book" method="POST">
+        <label>Select Book:</label>
+        <select name="book_id" required>
+            {% for book in books %}
+                <option value="{{ book.id }}">{{ book.name }} by {{ book.author }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <button type="submit">Issue Book</button>
+    </form>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
